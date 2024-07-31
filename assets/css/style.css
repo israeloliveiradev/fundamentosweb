@@ -1,0 +1,160 @@
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan";
+
+    
+
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1300px;
+    margin: 0 auto;
+}   
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button{
+    padding:10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ff8c00;
+    border: 0;
+    border-radius: 30px;
+    transform: scale(1.06);
+    cursor: pointer;
+    
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 3%;
+    
+    
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+header a{
+    
+    padding: 0 40px;
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block; 
+    transition: transform 0.2s;
+    
+    
+    
+}
+header a:hover{
+    color: white;
+    transform: scale(1.06);
+
+}
+
+header nav ul {
+    list-style: none;
+   
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+   
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ff8c00b7;
+    transform: scale(1.10); 
+    transition: transform 0.2; 
+   
+}
+/* ESTILO DO TOPO DO SITE */
+
+section .topside .flex{
+    padding: 40px 4%
+}
+
+section .topside .flex {
+    display: flex;
+    padding: 40px 4%;
+    align-items: left;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topside h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.topside .txt-topo-site h1 span{
+    color: #ff8c00;
+    font-size: 50px;
+}
+
+.txt-topo-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topside .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+    text-align: left;   
+    font-size: 21px;
+}
+
+.topside .btn-contato {
+    align-self: flex-start;
+    text-align: left;
+   
+}
+
+.topside .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
