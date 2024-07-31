@@ -15,7 +15,7 @@ body{
 }
 
 .interface {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
 }   
 
@@ -31,8 +31,24 @@ body{
     border: 0;
     border-radius: 30px;
     transform: scale(1.06);
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #ff8c00;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ff8c00b7;
+    transform: scale(1.10); 
+    transition: transform 0.2; 
+   
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -53,7 +69,7 @@ header a{
     padding: 0 40px;
     color: rgb(116, 116, 116);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     display: inline-block; 
     transition: transform 0.2s;
@@ -79,12 +95,6 @@ header nav ul li{
    
 }
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #ff8c00b7;
-    transform: scale(1.10); 
-    transition: transform 0.2; 
-   
-}
 /* ESTILO DO TOPO DO SITE */
 
 section .topside .flex{
@@ -122,29 +132,160 @@ section .topside .flex {
 .topside .txt-topo-site p{
     color: white;
     margin: 40px 0;
-    text-align: left;   
+    text-align: justify;   
     font-size: 21px;
 }
 
 .topside .btn-contato {
     align-self: flex-start;
     text-align: left;
-   
+    width: 210px;
 }
 
-.topside .img-topo-site img{
+.topside .btn-contato button{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.topside .img-topo-site img {
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+    animation: flutuar 2.8s ease-in-out infinite;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+    50% {
         top: 30px;
     }
-}   
+    100% {
+        top: 0;
+    }
+}
+
+/* ESTILO SOBRE.HTML */
+
+section .sobre{
+    padding: 40px 4%;
+}
+
+.sobre .txt-sobre{
+    color: white;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #ff8c00;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff8c00e8;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 15px 5px;
+    transition: .2s;
+}
+
+/* ESTILO CONTATO.HTML */
+section.formulario{
+    padding: 80px 4%; 
+    
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(61, 61, 61, 0.397);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #ff8c00;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+
+
+.interface footer {
+    padding: 40px 4%;   
+     
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+   
+}
+footer .line-footer p i{
+    color:#ff8c00;
+    font-size: 23px;  
+}
+footer .line-footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+.borda{
+    border-top: 2px solid #ff8c00;
+}
+
+
 
 
 
