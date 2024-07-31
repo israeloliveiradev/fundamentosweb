@@ -139,12 +139,13 @@ section .topside .flex {
 .topside .btn-contato {
     align-self: flex-start;
     text-align: left;
-    width: 210px;
+    width: 250px;
 }
 
 .topside .btn-contato button{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
+    text-shadow: black
 }
 
 .topside .img-topo-site img {
