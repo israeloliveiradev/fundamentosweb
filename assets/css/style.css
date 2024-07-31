@@ -266,10 +266,14 @@ form .btn-enviar input{
 
 footer .flex{
     justify-content: space-between;
+    align-items: center;
+    
+    
 }
 
 footer .line-footer{
     padding: 20px 0;
+    align-items: center;
    
 }
 footer .line-footer p i{
@@ -285,10 +289,13 @@ footer .line-footer p a{
     border-top: 2px solid #ff8c00;
 }
 
+.direitos {
 
-
-
-
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    
+}
 
 
 
