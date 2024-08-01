@@ -40,12 +40,14 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
                 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu telefone:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-
+                <form action="" onsubmit="enviarFormulario(); return false">
+                    <input type="text" name="" id="nome" placeholder="Seu nome completo:" onkeyup="validaNome()" required>
+                    <div id="txtNome"></div>
+                    <input type="text" name="" id="email" placeholder="Seu e-mail:" onkeyup="validaEmail()" required>
+                    <div id="txtEmail"></div>
+                    <input type="text" name="" id="telefone" placeholder="Seu telefone:" oninput="formatarTelefone()" maxlength="15">
+                    <div></div>
+                    <textarea name="" id="caixa-texto" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="ENVIAR">
 
@@ -71,8 +73,8 @@
             </div> <!--DIV LINE FOOTER-->
         </div> <!--INTERFACE-->
     </footer>
-
     
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
