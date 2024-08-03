@@ -9,6 +9,8 @@ let nomeOk = false;
 let assuntoOk = false;
 let emailOk = false;
 
+
+
 function validaNome(){
     let nome = document.querySelector("#nome")
     let txtNome = document.querySelector("#txtNome")
@@ -31,8 +33,7 @@ function validaEmail() {
         txtEmail.innerHTML = "E-mail Inválido";
         txtEmail.style.color = "white";
         emailOk = false;
-
-        
+      
     } else {
         txtEmail.innerHTML = "";
     }   emailOk = true;
