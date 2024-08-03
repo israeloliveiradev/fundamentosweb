@@ -1,12 +1,12 @@
 /* GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "League Spartan";
 }
 
-body{
+body {
     background-color: black;
     height: 100vh;
 }
@@ -14,67 +14,141 @@ body{
 .interface {
     max-width: 1450px;
     margin: 0 auto;
-}   
+}
 
 .flex {
     display: flex;
 }
 
-.btn-contato button{
-    padding:10px 40px;
+.btn-contato button {
+    padding: 10px 40px;
     font-size: 18px;
     font-weight: 500;
     background-color: #ff8c00;
     border: 0;
     border-radius: 30px;
     transform: scale(1.06);
-    cursor: pointer;  
+    cursor: pointer;
 }
 
-h2.titulo{
+h2.titulo {
     color: white;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #ff8c00;
 }
 
-button:hover, form .btn-enviar input:hover{
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #ff8c00b7;
-    transform: scale(1.10); 
-    transition: transform 0.2; 
-   
+    transform: scale(1.10);
+    transition: transform 0.2;
 }
 
-/* ESTILO DO CABEÇALHO */
-header{
-    padding: 40px 3%;
-    
-    
+/* ESTILO DO MENU MOBILE */
+
+.btn-abrir-menu{
+    display: none;
 }
-header > .interface{
+
+.btn-abrir-menu i {
+    color: #ff8c00;
+    font-size: 40px;
+}
+
+.menu-mobile {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease; 
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~.overlay-menu {
+    display: block;
+}
+
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+
+}
+
+.menu-mobile .btn-fechar i {
+    color: #ff8c00;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #ff8c00;
+    color: black;
+}
+
+.overlay-menu {
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40px 3%;
+
+
+}
+
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
+
+
 }
-header a{
-    
+
+header a {
+
     padding: 0 40px;
     color: rgb(116, 116, 116);
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    display: inline-block; 
+    display: inline-block;
     transition: transform 0.2s;
-    
-    
-    
+
+
+
 }
-header a:hover{
+
+header nav.menu-desktop a:hover {
     color: white;
     transform: scale(1.06);
 
@@ -82,23 +156,23 @@ header a:hover{
 
 header nav ul {
     list-style: none;
-   
-    
+
+
 }
 
-header nav ul li{
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 15px;
-   
+
 }
 
 /* ESTILO DO TOPO DO SITE */
 
-section .topside .flex{
+section .topside .flex {
     padding: 40px 4%
 }
 
-section .topside .flex {
+section.topside .flex {
     display: flex;
     padding: 40px 4%;
     align-items: left;
@@ -106,14 +180,14 @@ section .topside .flex {
     gap: 90px;
 }
 
-.topside h1{
+.topside h1 {
     color: white;
     font-size: 42px;
     line-height: 40px;
     text-align: left;
 }
 
-.topside .txt-topo-site h1 span{
+.topside .txt-topo-site h1 span {
     color: #ff8c00;
     font-size: 50px;
 }
@@ -126,10 +200,10 @@ section .topside .flex {
     text-align: center;
 }
 
-.topside .txt-topo-site p{
+.topside .txt-topo-site p {
     color: white;
     margin: 40px 0;
-    text-align: justify;   
+    text-align: justify;
     font-size: 21px;
 }
 
@@ -139,7 +213,7 @@ section .topside .flex {
     width: 250px;
 }
 
-.topside .btn-contato button{
+.topside .btn-contato button {
     font-size: 20px;
     font-weight: 600;
     text-shadow: black
@@ -149,16 +223,18 @@ section .topside .flex {
     position: relative;
     animation: flutuar 2.8s ease-in-out infinite;
     margin-bottom: 120px;
-    
+
 }
 
 @keyframes flutuar {
     0% {
         top: 0;
     }
+
     50% {
         top: 30px;
     }
+
     100% {
         top: 0;
     }
@@ -166,38 +242,38 @@ section .topside .flex {
 
 /* ESTILO SOBRE.HTML */
 
-section .sobre{
+section .sobre {
     padding: 40px 4%;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: white;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 50px;
     line-height: 45px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #ff8c00;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 10px 0;
     text-align: justify;
     font-size: 18px;
     line-height: 1.2;
 }
 
-.btn-social button{
+.btn-social button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -210,12 +286,12 @@ section.sobre .flex{
 }
 
 /* ESTILO CONTATO.HTML */
-section.formulario{
-    padding: 80px 4%; 
-    
+section.formulario {
+    padding: 80px 4%;
+
 }
 
-form{
+form {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -223,10 +299,11 @@ form{
     flex-direction: column;
     gap: 10px;
     margin-top: 40px;
-    
+
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     background-color: rgba(61, 61, 61, 0.397);
     border: none;
@@ -237,19 +314,19 @@ form input, form textarea{
     font-size: 18px;
 }
 
-form textarea{
+form textarea {
     resize: none;
     max-height: 200px;
     height: 150px;
     overflow: hidden;
 }
 
-form .btn-enviar{
+form .btn-enviar {
     margin-top: 20px;
     text-align: center;
 }
 
-form .btn-enviar input{
+form .btn-enviar input {
     width: 120px;
     background-color: #ff8c00;
     color: black;
@@ -262,32 +339,34 @@ form .btn-enviar input{
 
 
 .interface footer {
-    padding: 40px 4%;   
-     
+    padding: 40px 4%;
+
 }
 
-footer .flex{
+footer .flex {
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 }
 
-footer .line-footer{
+footer .line-footer {
     padding: 20px 0;
     align-items: center;
-   
+
 }
-footer .line-footer p i{
-    color:#ff8c00;
-    font-size: 23px;  
+
+footer .line-footer p i {
+    color: #ff8c00;
+    font-size: 23px;
 }
-footer .line-footer p a{
+
+footer .line-footer p a {
     color: white;
     text-decoration: none;
 }
 
-.borda{
+.borda {
     border-top: 2px solid #ff8c00;
 }
 
@@ -295,22 +374,22 @@ footer .line-footer p a{
     font-size: 15px;
     padding: 10px;
     color: white;
-    
+
 }
 
 /* ESTILO PROJETOS */
-section.projetos{
+section.projetos {
     padding: 80px 4%;
     box-shadow: 0 0 20px 10px rgba(32, 32, 32, 0.274);
 }
 
-section.projetos .flex{
+section.projetos .flex {
     justify-content: space-around;
     margin-top: 60px;
 }
 
 
-.img-proj{
+.img-proj {
     width: 360px;
     height: 460px;
     background-color: #ff8c00;
@@ -318,21 +397,21 @@ section.projetos .flex{
     background-position: 100% 0%;
     transition: 8s;
     cursor: pointer;
-    border-radius: 40px; 
-    position: relative;  
+    border-radius: 40px;
+    position: relative;
 }
 
-.img-proj:hover{
+.img-proj:hover {
     background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
-    background-color: rgba(0, 0, 0, 0.705);   
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -341,25 +420,159 @@ section.projetos .flex{
     transition: 0.5s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
 }
 
-.overlay a{
+.overlay a {
     font-size: 23px;
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
+@media screen and (max-width: 1040px) {
+
+    /* GERAL */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topside .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 30px;
+    }
+
+    /* CABEÇALHO */
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
 
 
+    /* TOPO DO SITE */
+
+    .topside .img-topo-site img {
+        margin-top: 1px;
+        align-items: left;
+
+    }
+
+    section.topside .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding-top: 0;
+    }
+
+    section.topside {
+        padding: 20px 8%;
+    }
+
+    section.topside .flex {
+        gap: 40px;
+    }
+
+    .topside h1 {
+        font-size: 35px;
+    }
+
+    .topside .img-topo-site img {
+        width: 100%;
+    }
+
+    .topside .img-topo-site img {
+        margin-bottom: 10px;
+
+    }
+
+    .logo .imagem-principal {
+        padding-bottom: 10px;
+        width: 80%;
+        height: 80%;
+    }
+
+    .topside .txt-topo-site p {
+        font-size: 23px;
+        text-align: left;
+    }
+
+    /* PROJETOS */
+
+    .img-proj {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex {
+        gap: 60px;
+    }
+
+    .topside .btn-contato {
+        display: flex;
+        align-self: center;
+    }
+
+    section .topside .flex {
+        padding: 200px 4%
+    }
+
+    /* RODAPÉ */
+
+    footer .flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    /* SOBRE.HTML */
+
+    section.sobre {
+        padding: 20px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 40px;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    section.sobre .txt-sobre .btn-social {
+        align-self: center;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 20px;
+        text-align: justify;
+    }
 
 
+    section.sobre .flex {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .txt-sobre .btn-social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre .img-sobre img {
+        width: 100%;
+        padding-top: 1px;
+    }
 
 
-
-
-
-
-
+}

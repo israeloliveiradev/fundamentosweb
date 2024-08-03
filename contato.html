@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-        <!-- FIM GOOGLE FONTS -->
-    
-        <!-- BOOTSTRAP ICONS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <!-- FIM BOOTSTRAP ICONS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
 </head>
-<body> 
+
+<body>
 
     <header>
         <div class="interface">
@@ -34,18 +34,40 @@
                     <li><a href="sobre.html">Sobre Mim</a></li>
                 </ul>
             </nav>
-        </div><!--INTERFACE--> 
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="sobre.html">Sobre Mim</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!-- MENU MOBILE -->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--INTERFACE-->
 
         <section class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
-                
+
                 <form action=" " onsubmit="enviarFormulario(); return false">
-                    <input type="text" name="" id="nome" placeholder="Seu nome completo:" onkeyup="validaNome()" required autocomplete="off">
+                    <input type="text" name="" id="nome" placeholder="Seu nome completo:" onkeyup="validaNome()"
+                        required autocomplete="off">
                     <div id="txtNome"></div>
-                    <input type="text" name="" id="email" placeholder="Seu e-mail:" onkeyup="validaEmail()" required autocomplete="off">
+                    <input type="text" name="" id="email" placeholder="Seu e-mail:" onkeyup="validaEmail()" required
+                        autocomplete="off">
                     <div id="txtEmail"></div>
-                    <input type="text" name="" id="telefone" placeholder="Seu telefone:" oninput="formatarTelefone()" maxlength="15" autocomplete="off">
+                    <input type="text" name="" id="telefone" placeholder="Seu telefone:" oninput="formatarTelefone()"
+                        maxlength="15" autocomplete="off">
                     <div></div>
                     <textarea name="" id="caixa-texto" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar">
@@ -61,20 +83,22 @@
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
-                <div class="logo-footer">
+                    <div class="logo-footer">
                         <img src="assets/images/Login.png" alt="Logo Israel">
                     </div> <!--LOGO FOOTER-->
-                    <p class="direitos">Todos os direitos reservados a Israel Oliveira © 2024.</p>   
+                    <p class="direitos">Todos os direitos reservados a Israel Oliveira © 2024.</p>
                 </div>
             </div> <!--DIV LINE FOOTER-->
             <div class="line-footer  borda">
-                <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:israeloliveiracontact@gmail.com">israeloliveiracontact@gmail.com</a></p>
-                
+                <p><i class="bi bi-envelope-at-fill"></i> <a
+                        href="mailto:israeloliveiracontact@gmail.com">israeloliveiracontact@gmail.com</a></p>
+
             </div> <!--DIV LINE FOOTER-->
         </div> <!--INTERFACE-->
     </footer> <!-- FOOTER -->
-    
-    <script src="assets/js/script.js"></script>
+
+
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>

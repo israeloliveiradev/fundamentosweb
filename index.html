@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Israel Oliveira</title>
-     <!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
@@ -14,7 +15,8 @@
     <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body> 
+
+<body>
 
     <header>
         <div class="interface">
@@ -37,73 +39,108 @@
                     <button>Contato</button>
                 </a>
             </div><!--BTN-CONTATO-->
-        </div><!--INTERFACE--> 
-    </header><!-- CABEÇALHO --> 
-</head>
-<body>
-    <main>
-        <section class="topside">
-           <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO VISÕES EM SOLUÇÕES, LINHA POR LINHA DE CÓDIGO<span>.</span></h1>
-                        <p>Cada visão tem o potencial de se tornar uma solução inovadora. Com precisão e criatividade, cada linha de código é cuidadosamente elaborada para transformar conceitos em realidades digitais impressionantes. Aqui, a excelência é construída linha por linha, criando experiências que encantam e impactam.</p>
 
-                        <div class="btn-contato">
-                            <a href="https://wa.me/5511961605602?text=Ol%C3%A1%2C%20Israel!%20Podemos%20conversar%3F " target="_blank" ><button>Entre em Contato</button></a>
-                        </div>
-                    </div> <!-- TXT TOP SIDE -->
-                    
-                    <div class="img-topo-site">
-                        <img src="assets/images/FT__ISRAEL.png" alt="Foto Israel Oliveira">
-                    </div> <!-- IMG TOP SIDE -->
-                </div><!-- FLEX --> 
-            </div>   <!-- INTERFACE -->
-        </section>  <!-- TOPO-DO-SITE -->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
 
-        <section class="projetos">
-            <div class="interface">
-                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
-                <div class="flex">
-                    <div class="img-proj" style="background-image: url(https://i.im.ge/2024/08/03/foS0A6.1.png);">
-                        <div class="overlay">
-                            <a href="https://github.com/israeloliveiradev/blogpessoal-springboot">BLOG PESSOAL API</a>
-                        </div>
-                    </div>
-                    <div class="img-proj" style="background-image: url(https://i.im.ge/2024/08/03/fo1Hx0.Untitled-design-3.png);">
-                        <div class="overlay">
-                            <a href="https://github.com/israeloliveiradev/planner-api">PLANNER API</a>
-                        </div>
-                    </div>
-                    <div class="img-proj" style="background-image: url(https://i.im.ge/2024/08/03/fodbJz.Untitled-design-9.png);">
-                        <div class="overlay">
-                            <a href="https://github.com/israeloliveiradev/crud-farmacia" target="_blank">CRUD FARMACIA</a>
-                        </div>
-                    </div>
-                </div><!-- FLEX -->
-            </div> <!-- INTERFACE-->
-        </section> <!-- PROJETOS -->
-    </main> 
-    <footer> 
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                <div class="logo-footer">
-                        <img src="assets/images/Login.png" alt="Logo Israel">
-                    </div> <!--LOGO FOOTER-->
-                    <div class="btn-social">
-                        <a href="https://www.linkedin.com/in/israeloliveiradev/"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/israeloliveiradev"><button><i class="bi bi-github"></i></button></a>
-                        <a href="https://discord.com/users/351521514753097729"><button><i class="bi bi-discord"></i></button></a>
-                    </div> <!--BTN SOCIAL-->
-                    <p class="direitos">Todos os direitos reservados a Israel Oliveira © 2024.</p>   
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">    
+                    <i class="bi bi-x-lg"></i>
                 </div>
-            </div> <!--DIV LINE FOOTER-->
-            <div class="line-footer  borda">
-                <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:israeloliveiracontact@gmail.com">israeloliveiracontact@gmail.com</a></p>
-                
-            </div> <!--DIV LINE FOOTER-->
-        </div> <!--INTERFACE-->
-    </footer> <!--FOOTER --> 
-</body>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="sobre.html">Sobre Mim</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!-- MENU MOBILE -->
+            <div class="overlay-menu" id="overlay-menu"></div>
+    </header><!-- CABEÇALHO -->
+    </head>
+
+    <body>
+        <main>
+            <section class="topside">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="txt-topo-site">
+                            <h1>TRANSFORMANDO VISÕES EM SOLUÇÕES, LINHA POR LINHA DE CÓDIGO<span>.</span></h1>
+                            <p>Cada visão tem o potencial de se tornar uma solução inovadora. Com precisão e
+                                criatividade, cada linha de código é cuidadosamente elaborada para transformar conceitos
+                                em realidades digitais impressionantes. Aqui, a excelência é construída linha por linha,
+                                criando experiências que encantam e impactam.</p>
+
+                            <div class="btn-contato">
+                                <a href="https://wa.me/5511961605602?text=Ol%C3%A1%2C%20Israel!%20Podemos%20conversar%3F "
+                                    target="_blank"><button>Entre em Contato</button></a>
+                            </div>
+                        </div> <!-- TXT TOP SIDE -->
+
+                        <div class="img-topo-site">
+                            <img src="assets/images/FT__ISRAEL.png" alt="Foto Israel Oliveira">
+                        </div> <!-- IMG TOP SIDE -->
+                    </div><!-- FLEX -->
+                </div> <!-- INTERFACE -->
+            </section> <!-- TOPO-DO-SITE -->
+
+            <section class="projetos">
+                <div class="interface">
+                    <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+                    <div class="flex">
+                        <div class="img-proj" style="background-image: url(https://i.im.ge/2024/08/03/foS0A6.1.png);">
+                            <div class="overlay">
+                                <a href="https://github.com/israeloliveiradev/blogpessoal-springboot"
+                                    target="_blank">BLOG PESSOAL API</a>
+                            </div>
+                        </div>
+                        <div class="img-proj"
+                            style="background-image: url(https://i.im.ge/2024/08/03/fo1Hx0.Untitled-design-3.png);">
+                            <div class="overlay">
+                                <a href="https://github.com/israeloliveiradev/planner-api" target="_blank">PLANNER
+                                    API</a>
+                            </div>
+                        </div>
+                        <div class="img-proj"
+                            style="background-image: url(https://i.im.ge/2024/08/03/fodbJz.Untitled-design-9.png);">
+                            <div class="overlay">
+                                <a href="https://github.com/israeloliveiradev/crud-farmacia" target="_blank">CRUD
+                                    FARMACIA</a>
+                            </div>
+                        </div>
+                    </div><!-- FLEX -->
+                </div> <!-- INTERFACE-->
+            </section> <!-- PROJETOS -->
+        </main>
+        <footer>
+            <div class="interface">
+                <div class="line-footer">
+                    <div class="flex">
+                        <div class="logo-footer">
+                            <img src="assets/images/Login.png" alt="Logo Israel">
+                        </div> <!--LOGO FOOTER-->
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/israeloliveiradev/"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/israeloliveiradev"><button><i
+                                        class="bi bi-github"></i></button></a>
+                            <a href="https://discord.com/users/351521514753097729"><button><i
+                                        class="bi bi-discord"></i></button></a>
+                        </div> <!--BTN SOCIAL-->
+                        <p class="direitos">Todos os direitos reservados a Israel Oliveira © 2024.</p>
+                    </div>
+                </div> <!--DIV LINE FOOTER-->
+                <div class="line-footer  borda">
+                    <p><i class="bi bi-envelope-at-fill"></i> <a
+                            href="mailto:israeloliveiracontact@gmail.com">israeloliveiracontact@gmail.com</a></p>
+
+                </div> <!--DIV LINE FOOTER-->
+            </div> <!--INTERFACE-->
+        </footer> <!--FOOTER -->
+    </body>
+    <script src="assets/js/script.js"></script>
+
 </html>

@@ -69,3 +69,31 @@ function enviarFormulario(){
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    let btnMenu = document.getElementById('btn-menu');
+    let menu = document.getElementById('menu-mobile');
+    let overlay = document.getElementById('overlay-menu');
+    let btnFechar = document.querySelector('#menu-mobile .btn-fechar'); // Botão de fechar dentro do menu
+
+    if (btnMenu && menu && overlay && btnFechar) {
+        // Abrir o menu ao clicar no botão
+        btnMenu.addEventListener('click', () => {
+            menu.classList.add('abrir-menu');
+            overlay.style.display = 'block'; // Exibir o overlay
+        });
+
+        // Fechar o menu ao clicar no botão de fechar ou no overlay
+        btnFechar.addEventListener('click', () => {
+            menu.classList.remove('abrir-menu');
+            overlay.style.display = 'none'; // Esconder o overlay
+        });
+
+        overlay.addEventListener('click', () => {
+            menu.classList.remove('abrir-menu');
+            overlay.style.display = 'none'; // Esconder o overlay
+        });
+    } else {
+        console.error('Um ou mais elementos não foram encontrados.');
+    }
+});
+

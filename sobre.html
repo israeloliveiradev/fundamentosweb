@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sobre Mim</title>
 </head>
+
 <body>
     <header>
         <div class="interface">
@@ -27,67 +29,100 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Projetos</a></li>   
                 </ul>
             </nav>
 
-            <div class="btn-contato">
-                <a href="contato.html">
-                    <button>Contato</button>
-                </a>
-            </div><!--BTN-CONTATO-->
-        </div><!--INTERFACE--> 
-    </header> <!-- CABEÇALHO -->
-<main>
-    <section class="sobre">
-        <div class="interface">
-            <div class="flex">
-                <div class="img-sobre">
-                    <img src="assets/images/SOBRE.png" alt="Foto Israel Sorrindo">
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">    
+                    <i class="bi bi-x-lg"></i>
                 </div>
 
-                <div class="txt-sobre">
-                    <h2>
-                        MUITO PRAZER, <span>SOU ISRAEL OLIVEIRA.</span></h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="sobre.html">Sobre Mim</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!-- MENU MOBILE -->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--INTERFACE-->
+    </header> <!-- CABEÇALHO -->
+    <main>
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="assets/images/SOBRE.png" alt="Foto Israel Sorrindo">
+                    </div>
 
-                        <p>Sou um Desenvolvedor Full Stack apaixonado por inovação, cuja jornada tem sido enriquecedora e sempre alinhada com minha paixão pela tecnologia. Com experiências anteriores no ramo audiovisual e atualmente no sexto semestre da Graduação em Tecnologia em Radiologia e no primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, percebo como essas áreas têm sido fundamentais para minha formação como Desenvolvedor.
+                    <div class="txt-sobre">
+                        <h2>
+                            MUITO PRAZER, <span>SOU ISRAEL OLIVEIRA.</span></h2>
+
+                        <p>Sou um Desenvolvedor Full Stack apaixonado por inovação, cuja jornada tem sido enriquecedora
+                            e sempre alinhada com minha paixão pela tecnologia. Com experiências anteriores no ramo
+                            audiovisual e atualmente no sexto semestre da Graduação em Tecnologia em Radiologia e no
+                            primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, percebo como essas
+                            áreas têm sido fundamentais para minha formação como Desenvolvedor.
                         </p>
                         <p>
-                        Do ramo audiovisual, trago habilidades técnicas e práticas que enriquecem minha capacidade atual, proporcionando um entendimento profundo de ajustes técnicos e gestão de projetos. Simultaneamente, na graduação em Tecnologia em Radiologia, aprimoro habilidades analíticas e rigoroso controle de detalhes, essenciais para minha jornada no desenvolvimento de software.
+                            Do ramo audiovisual, trago habilidades técnicas e práticas que enriquecem minha capacidade
+                            atual, proporcionando um entendimento profundo de ajustes técnicos e gestão de projetos.
+                            Simultaneamente, na graduação em Tecnologia em Radiologia, aprimoro habilidades analíticas e
+                            rigoroso controle de detalhes, essenciais para minha jornada no desenvolvimento de software.
                         </p>
                         <p>
-                        Possuo conhecimento em Java, JavaScript, Python, HTML e CSS, experiência em segurança da informação e integração de sistemas. Utilizo frameworks como Spring Boot e React para o desenvolvimento de APIs RESTful, e tenho experiência com bancos de dados relacionais (MySQL e PostgreSQL) e não relacionais. Atualmente, estou finalizando o Bootcamp de Full Stack Java da Generation Brasil, onde aplico e aprendo na prática a atender às exigências do mercado com alta qualidade. Além disso, estou aprimorando minhas habilidades comportamentais para me tornar um profissional e desenvolvedor ainda melhor.
+                            Possuo conhecimento em Java, JavaScript, Python, HTML e CSS, experiência em segurança da
+                            informação e integração de sistemas. Utilizo frameworks como Spring Boot e React para o
+                            desenvolvimento de APIs RESTful, e tenho experiência com bancos de dados relacionais (MySQL
+                            e PostgreSQL) e não relacionais. Atualmente, estou finalizando o Bootcamp de Full Stack Java
+                            da Generation Brasil, onde aplico e aprendo na prática a atender às exigências do mercado
+                            com alta qualidade. Além disso, estou aprimorando minhas habilidades comportamentais para me
+                            tornar um profissional e desenvolvedor ainda melhor.
                         </p>
-                        
+
                         <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/israeloliveiradev/"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/israeloliveiradev"><button><i class="bi bi-github"></i></button></a>
-                            <a href="https://discord.com/users/351521514753097729"><button><i class="bi bi-discord"></i></button></a>
+                            <a href="https://www.linkedin.com/in/israeloliveiradev/"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/israeloliveiradev"><button><i
+                                        class="bi bi-github"></i></button></a>
+                            <a href="https://discord.com/users/351521514753097729"><button><i
+                                        class="bi bi-discord"></i></button></a>
 
-                         </div>
-                </div> <!-- TXT-SOBRE -->
+                        </div>
+                    </div> <!-- TXT-SOBRE -->
 
-                
-            </div><!-- FLEX -->
-        </div><!-- INTERFACE -->
-    </section> <!-- SOBRE -->
-</main>
-<footer>
-    <div class="interface">
-        <div class="line-footer">
-            <div class="flex">
-            <div class="logo-footer">
-                    <img src="assets/images/Login.png" alt="Logo Israel">
-                </div> <!--LOGO FOOTER-->
-                <p class="direitos">Todos os direitos reservados a Israel Oliveira © 2024.</p>   
-            </div>
-        </div> <!--DIV LINE FOOTER-->
-        <div class="line-footer  borda">
-            <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:israeloliveiracontact@gmail.com">israeloliveiracontact@gmail.com</a></p>
-            
-        </div> <!--DIV LINE FOOTER-->
-    </div> <!--INTERFACE-->
-</footer> <!-- FOOTER -->
 
+                </div><!-- FLEX -->
+            </div><!-- INTERFACE -->
+        </section> <!-- SOBRE -->
+    </main> <!-- MAIN -->
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="assets/images/Login.png" alt="Logo Israel">
+                    </div> <!--LOGO FOOTER-->
+                    <p class="direitos">Todos os direitos reservados a Israel Oliveira © 2024.</p>
+                </div>
+            </div> <!--DIV LINE FOOTER-->
+            <div class="line-footer  borda">
+                <p><i class="bi bi-envelope-at-fill"></i> <a
+                        href="mailto:israeloliveiracontact@gmail.com">israeloliveiracontact@gmail.com</a></p>
+
+            </div> <!--DIV LINE FOOTER-->
+        </div> <!--INTERFACE-->
+    </footer> <!-- FOOTER -->
 </body>
+
+<script src="assets/js/script.js"></script>
+
 </html>
