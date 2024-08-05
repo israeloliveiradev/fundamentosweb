@@ -2,8 +2,8 @@ let nomeOk = false;
 let emailOk = false;
 
 function validaNome() {
-    let nome = document.querySelector("#nome")
-    let txtNome = document.querySelector("#txtNome")
+    let nome = document.querySelector("#nome");
+    let txtNome = document.querySelector("#txtNome");
     if (nome.value.length < 3) {
         txtNome.innerHTML = "Nome Inválido";
         txtNome.style.color = "white";
@@ -48,15 +48,36 @@ function formatarTelefone() {
 function enviarFormulario() {
     if (nomeOk && emailOk) {
         const btnEnviar = document.getElementById('btn-enviar');
-        btnEnviar.textContent = 'Enviando...'; // Altera o texto do botão
-        btnEnviar.disabled = true; // Desativa o botão para evitar múltiplos envios
-        return true; // Permite o envio do formulário
+        btnEnviar.textContent = 'Enviando...'; 
+        btnEnviar.disabled = true; 
+
+        const form = document.querySelector('form');
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.result && data.result !== 'error') {
+                window.location.href = data.result; 
+            } else {
+                console.error('Erro:', data.error);
+                alert('Houve um erro ao enviar o formulário. Tente novamente.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro na requisição:', error);
+            alert('Houve um erro ao enviar o formulário. Tente novamente.');
+        });
+
+        return false; 
     } else {
         alert("Preencha o formulário corretamente antes de enviar.");
-        return false; // Impede o envio do formulário
+        return false; 
     }
 }
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
