@@ -55,6 +55,10 @@ form .btn-enviar input:hover {
     font-size: 40px;
 }
 
+.btn-abrir-menu{
+    display: none;
+}
+
 .menu-mobile {
     background-color: #000;
     height: 100vh;
