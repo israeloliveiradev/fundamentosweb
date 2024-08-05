@@ -59,28 +59,32 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
-                <form action="https://formsubmit.co/israeloliveiracontact@gmail.com" 
-                    method="POST" onsubmit="return enviarFormulario();">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" onkeyup="validaNome()" required autocomplete="off">
+                <form action="https://formsubmit.co/israeloliveiracontact@gmail.com" method="POST"
+                    onsubmit="return enviarFormulario();">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" onkeyup="validaNome()"
+                        required autocomplete="off">
                     <div id="txtNome"></div>
-                    
-                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" onkeyup="validaEmail()" required autocomplete="off">
+
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" onkeyup="validaEmail()"
+                        required autocomplete="off">
                     <div id="txtEmail"></div>
 
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://portifolioisrael.vercel.app/thanks.html"> 
-                    
-                    <input type="text" name="telefone" id="telefone" placeholder="Seu telefone:" oninput="formatarTelefone()" maxlength="15" autocomplete="off">
+                    <input type="hidden" name="_next" value="https://portifolioisrael.vercel.app/thanks.html">
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <input type="text" name="telefone" id="telefone" placeholder="Seu telefone:"
+                        oninput="formatarTelefone()" maxlength="15" autocomplete="off">
                     <div></div>
-                    
+
                     <textarea name="mensagem" id="caixa-texto" placeholder="Sua mensagem" required></textarea>
-                    
+
                     <div class="btn-enviar">
-                        <input type="submit" id="btn-enviar" value="ENVIAR">
-                        <span id="spinner" class="spinner" style="display: none;"></span>        
+                        <button type="submit" id="btn-enviar">ENVIAR</button>
                     </div>
                 </form>
-                
+
 
             </div><!--INTERFACE-->
         </section>

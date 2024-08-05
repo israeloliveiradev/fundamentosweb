@@ -47,19 +47,17 @@ function formatarTelefone() {
 
 function enviarFormulario() {
     if (nomeOk && emailOk) {
-        const btnSubmit = document.getElementById('btn-enviar');
-        const spinner = document.getElementById('loading-spinner');
-
-        btnSubmit.value = 'Enviando...';
-        spinner.style.display = 'inline-block'; // Mostra o spinner
-        btnSubmit.disabled = true;
-
-        return true;
+        const btnEnviar = document.getElementById('btn-enviar');
+        btnEnviar.textContent = 'Enviando...'; // Altera o texto do botão
+        btnEnviar.disabled = true; // Desativa o botão para evitar múltiplos envios
+        return true; // Permite o envio do formulário
     } else {
         alert("Preencha o formulário corretamente antes de enviar.");
-        return false;
+        return false; // Impede o envio do formulário
     }
 }
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const btnMenu = document.getElementById('btn-menu');
@@ -68,19 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnFechar = menuMobile.querySelector('.btn-fechar');
     const menuLinks = menuMobile.querySelectorAll('nav ul li a');
 
-    // Função para abrir o menu e mostrar o overlay
     function abrirMenu() {
         menuMobile.classList.add('open');
         overlay.classList.add('open');
     }
 
-    // Função para fechar o menu e esconder o overlay
     function fecharMenu() {
         menuMobile.classList.remove('open');
         overlay.classList.remove('open');
     }
 
-    // Adiciona eventos aos botões e links
     if (btnMenu && menuMobile && overlay && btnFechar) {
         btnMenu.addEventListener('click', abrirMenu);
 
