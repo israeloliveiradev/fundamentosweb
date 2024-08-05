@@ -1,10 +1,10 @@
 let nomeOk = false;
 let emailOk = false;
 
-function validaNome(){
+function validaNome() {
     let nome = document.querySelector("#nome")
     let txtNome = document.querySelector("#txtNome")
-    if (nome.value.length < 3){
+    if (nome.value.length < 3) {
         txtNome.innerHTML = "Nome Inválido";
         txtNome.style.color = "white";
         nomeOk = false;
@@ -17,7 +17,7 @@ function validaNome(){
 function validaEmail() {
     let email = document.querySelector("#email");
     let txtEmail = document.querySelector("#txtEmail");
-    
+
     if (email.value.indexOf("@") === -1 || email.value.indexOf(".") === -1) {
         txtEmail.innerHTML = "E-mail Inválido";
         txtEmail.style.color = "white";
@@ -41,22 +41,25 @@ function formatarTelefone() {
     } else if (valor.length > 2) {
         valor = valor.replace(/(\d{2})/, '($1) ');
     }
-    
+
     telefone.value = valor;
-}   
+}
 
 function enviarFormulario() {
     if (nomeOk && emailOk) {
-        console.log('Enviando formulário...');
-        
-        return true; 
+        const btnSubmit = document.getElementById('btn-enviar');
+        const spinner = document.getElementById('loading-spinner');
+
+        btnSubmit.value = 'Enviando...';
+        spinner.style.display = 'inline-block'; // Mostra o spinner
+        btnSubmit.disabled = true;
+
+        return true;
     } else {
         alert("Preencha o formulário corretamente antes de enviar.");
-        return false; 
+        return false;
     }
 }
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const btnMenu = document.getElementById('btn-menu');
