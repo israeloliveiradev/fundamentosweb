@@ -48,6 +48,7 @@ function formatarTelefone() {
 function enviarFormulario() {
     if (nomeOk && emailOk) {
         console.log('Enviando formulário...');
+        
         return true; 
     } else {
         alert("Preencha o formulário corretamente antes de enviar.");
